@@ -10,8 +10,8 @@ sudo apt install xterm metasploit-framework python3 python3-pip
 
 # Installation
 
-``
+```
 pip3 install -r requiriments.txt
-
 python3 fastMeterpreter.py
+
 ```
