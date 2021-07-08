@@ -5,7 +5,7 @@ A tool designed to create fatest payloads for windows, linux and android
 # Requiriments
 
 ```
-sudo apt install xterm metasploit-framework python3 python3-pip
+sudo apt install gnome-terminal metasploit-framework python3 python3-pip
 ```
 
 # Installation
