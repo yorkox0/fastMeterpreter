@@ -1,8 +1,8 @@
 # fast-meterpreter
 
-A tool designed to create fatest payloads for windows, linux and android
+A tool designed to create the fastest payloads for windows, linux and android
 
-# Requiriments
+# Requirements
 
 ```
 sudo apt install gnome-terminal metasploit-framework python3 python3-pip
@@ -11,6 +11,6 @@ sudo apt install gnome-terminal metasploit-framework python3 python3-pip
 # Installation
 
 ```
-pip3 install -r requiriments.txt
+pip3 install -r requirements.txt
 python3 fastMeterpreter.py
 ```
