@@ -1,4 +1,4 @@
-# fast-meterpreter
+# fastMeterpreter
 
 A tool designed to create fatest payloads for windows, linux and android
 
