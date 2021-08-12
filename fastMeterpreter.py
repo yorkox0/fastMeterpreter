@@ -98,7 +98,7 @@ def main():
 
 			if http == "y":
 				purple()
-				httpPort = input("]\n[X] Http port -->> ")
+				httpPort = input("\n[X] Http port -->> ")
 				os.system("gnome-terminal -- python3 -m http.server "+httpPort+" ")
 
 	if payload == "linux":
